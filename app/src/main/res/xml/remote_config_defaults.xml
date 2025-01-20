@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>onboarding_api</key>
+        <value>
+            {
+            "onboarding_pages": [
+            {
+            "type": "Q1",
+            "button": "Continue",
+            "footer": "You can change this later",
+            "title": [
+            {
+            "text": "WHAT’S YOUR",
+            "text_color": "#ffffff",
+            "text_size": "25",
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": "GOAL",
+            "text_color": "#48B056",
+            "text_size": "25",
+            "text_weight": "bold",
+            "highlighted": true
+            },
+            {
+            "text": "?",
+            "text_color": "#ffffff",
+            "text_size": "25",
+            "text_weight": "bold",
+            "highlighted": false
+            }
+            ],
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": "1"
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": "4"
+            },
+            "items": [
+            {
+            "title": {
+            "text": "FITIA’S SPECIALS  ⭐️",
+            "text_color": "#ffffff",
+            "text_size": "14",
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "I want personalized Fitia meals and an easy way to track them.",
+            "text_color": "#A8A8A8",
+            "text_size": "12",
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🍲"
+            },
+            {
+            "title": {
+            "text": "Meal Tracker",
+            "text_color": "#ffffff",
+            "text_size": "14",
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "I simply want to track my meals.",
+            "text_color": "#A8A8A8",
+            "text_size": "12",
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🍲"
+            }
+            ]
+            }
+            }
+            ]
+            }
+        </value>
+    </entry>
+</defaultsMap>
