@@ -11,3 +11,4 @@ val WhiteColor10 = Color(0x10FFFFFF)
 
 val Gradient1 = Color(0xFF051105)
 val Gradient2 = Color(0xFF0F1210)
+val Gradient3 = Color(0xFF1F2521)

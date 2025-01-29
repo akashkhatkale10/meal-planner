@@ -3,12 +3,14 @@ package com.meal.mealplanner.data.mappers
 import com.meal.mealplanner.data.models.BackgroundStyleDto
 import com.meal.mealplanner.data.models.OnboardingDto
 import com.meal.mealplanner.data.models.OnboardingPageDto
+import com.meal.mealplanner.data.models.OnboardingQuestionDto
 import com.meal.mealplanner.data.models.OptionItemDto
 import com.meal.mealplanner.data.models.OptionsDto
 import com.meal.mealplanner.data.models.TextStyleDto
 import com.meal.mealplanner.domain.models.BackgroundStyle
 import com.meal.mealplanner.domain.models.OnboardingModel
 import com.meal.mealplanner.domain.models.OnboardingPage
+import com.meal.mealplanner.domain.models.OnboardingQuestionModel
 import com.meal.mealplanner.domain.models.OptionItem
 import com.meal.mealplanner.domain.models.Options
 import com.meal.mealplanner.domain.models.TextStyle
@@ -25,9 +27,24 @@ fun OnboardingPageDto?.toOnboardingPage() = if (this != null) {
         title = this.title?.mapNotNull {
             it.toTextStyle()
         },
-        footer = this.footer,
-        options = this.options.toOptions(),
+        subtitle = this.subtitle?.mapNotNull {
+            it.toTextStyle()
+        },
+        footer = this.footer?.toTextStyle(),
+        questions = this.questions?.mapNotNull {
+            it.toOnboardingQuestion()
+        },
         button = this.button,
+    )
+} else null
+
+fun OnboardingQuestionDto?.toOnboardingQuestion() = if (this != null) {
+    OnboardingQuestionModel(
+        question = this.question?.toTextStyle(),
+        id = this.id.orEmpty(),
+        options = this.options?.toOptions(),
+        type = OnboardingQuestionModel.OnboardingQuestionType.find(this.type),
+        selectionType = this.selectionType.orEmpty()
     )
 } else null
 
@@ -63,6 +80,7 @@ fun OptionItemDto?.toOptionItem() = if (this != null) {
     OptionItem(
         title = this.title?.toTextStyle(),
         subtitle = this.subtitle?.toTextStyle(),
-        icon = this.icon
+        icon = this.icon,
+        answerId = this.answerId.orEmpty()
     )
 } else null

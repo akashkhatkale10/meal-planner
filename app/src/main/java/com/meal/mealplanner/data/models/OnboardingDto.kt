@@ -13,8 +13,17 @@ data class OnboardingDto(
 data class OnboardingPageDto(
     @field:SerializedName("type") val type: String?,
     @field:SerializedName("button") val button: String?,
-    @field:SerializedName("footer") val footer: String?,
+    @field:SerializedName("footer") val footer: TextStyleDto?,
     @field:SerializedName("title") val title: List<TextStyleDto?>?,
+    @field:SerializedName("subtitle") val subtitle: List<TextStyleDto?>?,
+    @field:SerializedName("questions") val questions: List<OnboardingQuestionDto?>?,
+)
+
+data class OnboardingQuestionDto(
+    @field:SerializedName("id") val id: String?,
+    @field:SerializedName("question") val question: TextStyleDto?,
+    @field:SerializedName("type") val type: String?,
+    @field:SerializedName("selection_type") val selectionType: String?,
     @field:SerializedName("options") val options: OptionsDto?
 )
 
@@ -39,6 +48,7 @@ data class BackgroundStyleDto(
 )
 
 data class OptionItemDto(
+    @field:SerializedName("answer_id") val answerId: String?,
     @field:SerializedName("title") val title: TextStyleDto?,
     @field:SerializedName("subtitle") val subtitle: TextStyleDto?,
     @field:SerializedName("icon") val icon: String?

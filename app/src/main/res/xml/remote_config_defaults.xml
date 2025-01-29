@@ -6,80 +6,721 @@
             {
             "onboarding_pages": [
             {
-            "type": "Q1",
+            "type": "PAGE1",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
             "button": "Continue",
-            "footer": "You can change this later",
             "title": [
             {
-            "text": "WHAT’S YOUR",
+            "text": "WHAT DO YOU",
             "text_color": "#ffffff",
-            "text_size": "25",
+            "text_size": 25,
             "text_weight": "bold",
             "highlighted": false
             },
             {
-            "text": "GOAL",
+            "text": " WANT",
             "text_color": "#48B056",
-            "text_size": "25",
+            "text_size": 25,
             "text_weight": "bold",
             "highlighted": true
             },
             {
-            "text": "?",
+            "text": " TO DO ?",
             "text_color": "#ffffff",
-            "text_size": "25",
+            "text_size": 25,
             "text_weight": "bold",
             "highlighted": false
             }
             ],
+            "subtitle": [
+            {
+            "text": "Based on your input, we'll recommend the right calorie intake for you",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q1",
+            "type":"options",
+            "question": null,
             "options": {
             "unselected": {
             "bg_color": "#05FFFFFF",
             "stroke_color": "#10FFFFFF",
-            "stroke_width": "1"
+            "stroke_width": 1
             },
             "selected": {
             "bg_color": "#05FFFFFF",
             "stroke_color": "#48B056",
-            "stroke_width": "4"
+            "stroke_width": 4
             },
             "items": [
             {
             "title": {
-            "text": "FITIA’S SPECIALS  ⭐️",
+            "text": "Uniquely Yours: AI-Crafted Meals ⭐️",
             "text_color": "#ffffff",
-            "text_size": "14",
+            "text_size": 14,
             "text_weight": "bold",
             "highlighted": false
             },
             "subtitle": {
-            "text": "I want personalized Fitia meals and an easy way to track them.",
+            "text": "I want personalized Fitia meals and an easy way to track them",
             "text_color": "#A8A8A8",
-            "text_size": "12",
+            "text_size": 12,
             "text_weight": "regular",
             "highlighted": false
             },
-            "icon": "🍲"
+            "icon": "🍲",
+            "answer_id": "answer1"
             },
             {
             "title": {
             "text": "Meal Tracker",
             "text_color": "#ffffff",
-            "text_size": "14",
+            "text_size": 14,
             "text_weight": "bold",
             "highlighted": false
             },
             "subtitle": {
-            "text": "I simply want to track my meals.",
+            "text": "I simply want to track my meals",
             "text_color": "#A8A8A8",
-            "text_size": "12",
+            "text_size": 12,
             "text_weight": "regular",
             "highlighted": false
             },
-            "icon": "🍲"
+            "icon": "📕",
+            "answer_id": "answer2"
             }
             ]
             }
+            }
+            ]
+            },
+            {
+            "type": "PAGE2",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "button": "Continue",
+            "title": [
+            {
+            "text": "WHAT'S YOUR",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": " GOAL",
+            "text_color": "#48B056",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            },
+            {
+            "text": " ?",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            }
+            ],
+            "subtitle": [
+            {
+            "text": "This will help us prepare meal for you and determine your target calorie needs",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q2",
+            "type":"options",
+            "question": null,
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": 1
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": 4
+            },
+            "items": [
+            {
+            "title": {
+            "text": "Fat Loss",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Burn fat and build muscle",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🔥",
+            "answer_id": "answer1"
+            },
+            {
+            "title": {
+            "text": "Muscle Gain",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Gain weight and build muscle",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "💪🏻",
+            "answer_id": "answer2"
+            },
+            {
+            "title": {
+            "text": "Maintain Weight",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Focus on reshaping your body, not gaining weight",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🏋🏻",
+            "answer_id": "answer3"
+            }
+            ]
+            }
+            }
+            ]
+            },
+            {
+            "type": "PAGE3",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "button": "Continue",
+            "title": [
+            {
+            "text": "LET'S FIND OUT ABOUT",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": " YOU",
+            "text_color": "#48B056",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            }
+            ],
+            "subtitle": [
+            {
+            "text": "This will help us prepare meal for you and determine your target calorie needs",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q3",
+            "type":"two_options",
+            "question": {
+            "text": "Do you do strength training ?",
+            "text_color": "#ffffff",
+            "text_size": 16,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": 1
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": 4
+            },
+            "items": [
+            {
+            "title": {
+            "text": "Yes",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "👍🏻",
+            "answer_id": "answer1"
+            },
+            {
+            "title": {
+            "text": "No",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "👎🏻",
+            "answer_id": "answer2"
+            }
+            ]
+            }
+            },
+            {
+            "id": "q4",
+            "type":"two_options",
+            "question": {
+            "text": "Sex",
+            "text_color": "#ffffff",
+            "text_size": 16,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": 1
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": 4
+            },
+            "items": [
+            {
+            "title": {
+            "text": "Male",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "👨🏻",
+            "answer_id": "answer1"
+            },
+            {
+            "title": {
+            "text": "Female",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "👧🏻",
+            "answer_id": "answer2"
+            }
+            ]
+            }
+            },
+            {
+            "id": "q5",
+            "type":"selection",
+            "question": {
+            "text": "Enter your age",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            },
+            {
+            "id": "q6",
+            "type":"selection",
+            "question": {
+            "text": "Enter your weight (kg)",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            },
+            {
+            "id": "q7",
+            "type":"selection",
+            "question": {
+            "text": "Enter your height (cm)",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            }
+            ]
+            },
+            {
+            "type": "PAGE4",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "button": "Continue",
+            "title": [
+            {
+            "text": "WHAT'S YOUR",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": " ACTIVITY",
+            "text_color": "#48B056",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            },
+            {
+            "text": " LEVEL",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            }
+            ],
+            "subtitle": [
+            {
+            "text": "This will help us prepare meal for you and determine your target calorie needs",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q8",
+            "type":"options",
+            "question": null,
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": 1
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": 4
+            },
+            "items": [
+            {
+            "title": {
+            "text": "Little or no exercise",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "🚶🏻",
+            "answer_id": "answer1"
+            },
+            {
+            "title": {
+            "text": "Exercise 2-3 days every week",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "🏃🏻",
+            "answer_id": "answer2"
+            },
+            {
+            "title": {
+            "text": "Exercise 4-5 days every week",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "🏋🏻",
+            "answer_id": "answer3"
+            },
+            {
+            "title": {
+            "text": "Exercise 6-7 days every week",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "icon": "💪🏻",
+            "answer_id": "answer4"
+            }
+            ]
+            }
+            }
+            ]
+            },
+            {
+            "type": "PAGE5",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "button": "Continue",
+            "title": [
+            {
+            "text": "WHAT'S YOUR",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": " TARGET",
+            "text_color": "#48B056",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            },
+            {
+            "text": " ?",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            }
+            ],
+            "subtitle": [
+            {
+            "text": "This will help us prepare meal for you and determine your target calorie needs",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q6",
+            "type":"selection",
+            "question": {
+            "text": "Your weight",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            },
+            {
+            "id": "q10",
+            "type":"selection",
+            "question": {
+            "text": "Your target weight",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            },
+            {
+            "id": "q11",
+            "type":"selection",
+            "question": {
+            "text": "Speed to reach target weight",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": null
+            }
+            ]
+            },
+            {
+            "type": "PAGE6",
+            "footer": {
+            "text": "You can change this later",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "button": "Continue",
+            "title": [
+            {
+            "text": "SELECT YOUR",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            {
+            "text": " DIET",
+            "text_color": "#48B056",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            },
+            {
+            "text": " PREFERENCE",
+            "text_color": "#ffffff",
+            "text_size": 25,
+            "text_weight": "bold",
+            "highlighted": true
+            }
+            ],
+            "subtitle": [
+            {
+            "text": "This will help us prepare meal for you and determine your target calorie needs",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            }
+            ],
+            "questions": [
+            {
+            "id": "q12",
+            "type":"options",
+            "question": {
+            "text": "Your weight",
+            "text_color": "#A8A8A8",
+            "text_size": 14,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "options": {
+            "unselected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#10FFFFFF",
+            "stroke_width": 1
+            },
+            "selected": {
+            "bg_color": "#05FFFFFF",
+            "stroke_color": "#48B056",
+            "stroke_width": 4
+            },
+            "items": [
+            {
+            "title": {
+            "text": "High protein",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Increase protein, reduce carbs and fats",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🥗",
+            "answer_id": "answer1"
+            },
+            {
+            "title": {
+            "text": "Low carb",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Lower carbs, higher protein and fats",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🥪",
+            "answer_id": "answer2"
+            },
+            {
+            "title": {
+            "text": "Low fat",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Lower fat, higher protein and carbs",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🥦",
+            "answer_id": "answer3"
+            },
+            {
+            "title": {
+            "text": "Keto",
+            "text_color": "#ffffff",
+            "text_size": 14,
+            "text_weight": "bold",
+            "highlighted": false
+            },
+            "subtitle": {
+            "text": "Very low in carbs, higher protein and fats",
+            "text_color": "#A8A8A8",
+            "text_size": 12,
+            "text_weight": "regular",
+            "highlighted": false
+            },
+            "icon": "🥑",
+            "answer_id": "answer4"
+            }
+            ]
+            }
+            }
+            ]
             }
             ]
             }

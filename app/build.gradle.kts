@@ -64,6 +64,7 @@ dependencies {
     // dagger
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    implementation(libs.hilt.navigation)
 
     // retrofit
     implementation(libs.retrofit)
